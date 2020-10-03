@@ -1,0 +1,550 @@
+body {
+	/* background:       url(/s/images/bg_stars.jpg) repeat left top; */
+        /* background:       #4571DA; */
+
+	color:            black;
+	font-family:      Verdana, Arial, Helvetica, sans-serif;
+	font-size:        16px;
+	line-height:      130%;
+	text-decoration:  none;
+
+}
+
+
+img {
+    padding: 5px;
+}
+
+
+h1, h2, h3, h4, h5, h6, h7, h8, h9 {
+	margin:           2px 0px 2px 0px;
+	padding:          0px;
+	color:            #006;
+	font-size:        16px;
+	font-weight:      normal;
+	font-style:       italic;
+	text-align:       left;
+	line-height:      130%;
+}
+
+h1 {
+	margin:           10px 0px 10px 0px;
+	font-size:        22px;
+	font-weight:      bold;
+	font-style:       normal;
+	text-align:       center;
+}
+
+h2 {
+	margin:           8px 0px 8px 0px;
+	font-size:        16px;
+	font-weight:      bold;
+	font-style:       normal;
+	text-align:       left;
+}
+
+h3 {
+	margin:           4px 0px 4px 0px;
+	font-size:        16px;
+	font-weight:      bold;
+	font-style:       normal;
+	text-align:       left;
+}
+
+
+code {
+         background-color: #def; 
+/*       background-color: #bdf; */
+}
+
+pre {
+        width: 95%;
+	display: block;
+	background-color: #def;
+	padding: 4px;
+	border: 1px solid black;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+#message_box {
+        width: 95%;
+	display: block;
+	background-color: #ffd;
+	padding: 4px;
+	border: 1px solid black;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+
+a               { color: #069; text-decoration: none;      }
+a:hover         { color: #069; text-decoration: underline; }
+a:visited       { color: #069; text-decoration: none;      }
+a:visited:hover { color: #069; text-decoration: underline; }
+
+
+table {
+	color:            black;
+	font-family:      Verdana, Arial, Helvetica, sans-serif;
+	text-decoration:  none;
+}
+
+th, td {
+    padding: 10px;
+}
+
+
+
+
+table#centralSection {
+	width:            100%;
+	background-color: white;
+	border:           0px solid white;
+	margin:           0px 0px 0px 0px;
+	padding:          2px 0px 2px 0px;
+}
+
+table#centralSection tr {
+	text-align:       left;
+	vertical-align:   top;
+}
+
+table#centralSection td#lmenu {
+	width:            120px;
+	background-color: #fff;
+}
+
+table#centralSection td#rmenu {
+	width:            180px;
+	background-color: #ddd;
+}
+
+#contentSection {
+	width:            95%;
+	background-color: transparent;
+	margin:           0px 0px 0px 0px;
+	padding:          0px 5px 0px 15px;
+}
+/*
+			Other formatting.
+*/
+
+.highlight {
+	font-size:        1.6em;
+	font-weight:      bold;    
+	line-height:      1.2em;
+}
+
+ul.events {
+    list-style-type: none;
+    margin: 0;
+}
+
+li.events {
+    background: url('../../s/images/bbh-bullet.png') no-repeat left top;
+    height: 50px;
+    padding: 20px 0px 0px 60px;
+    font-size:        200%;
+    font-weight:      bold;    
+}    
+
+li.others {
+    background: url('../../s/images/tick.png') no-repeat left top;
+    height: 50px;
+    padding: 20px 0px 0px 60px;
+    font-size:        150%;
+    font-weight:      bold;    
+}    
+
+.caption {
+	color:            #777;
+	font-size:        9px;
+	font-weight:      normal;
+	text-align:       center;
+}
+
+.meta {
+	padding:          10px;
+	color:            #069;
+	font-size:        10px;
+	font-weight:      normal;
+	font-style:       italic;
+}
+
+#id_honeypot, label[for=id_honeypot] {
+	display: none !important;
+}
+ 
+#comment_form label, #comment_form input[type=text], #comment_form textarea {
+	display: block;
+}
+
+.tweets {
+	position:         relative;
+	text-align:       left;
+	color:            #777;
+	font-size:        10px;
+	font-weight:      normal;
+}
+
+img.fleft {
+	float:            left;
+	vertical-align:   top;
+}
+
+.pubtitlea {
+	color:        black;
+	font-weight:  bold;
+}
+.pubtitleb {
+	color:        red;
+	font-weight:  bold;
+}
+
+.warning {
+	color:            #ff007f;
+	font-weight:      normal;
+	text-align:       center;
+	text-decoration:  none;
+}
+
+.recommendf {
+	color:           red;
+	font-weight:     normal;
+	text-decoration: none;
+	text-align:      center;
+}
+
+.recommend {
+	color:           red;
+	font-size:       0.85em;
+	text-decoration: none;
+	text-align:      center;
+}
+.recommend a {
+	color:           #069;
+}
+
+.centeredtext {
+	text-align:       center;
+}
+
+.largecenteredtext {
+	text-align:       center;
+	font-size:        1.5em;
+}
+
+.errataentry {
+	font-family:      Monospace;
+	font-size:        14px;
+	text-decoration:  none;
+}
+.errata a               { color: #aa0000; }
+.errata a:hover         { color: #FF0011; }
+.errata a:visited       { color: #880022; }
+.errata a:visited:hover { color: #FF0022; }
+/*
+			Quick links table.
+*/
+.quicklinks {
+	position:          relative;
+	padding:           3px;
+	width:             95%;
+	margin-left:       auto;
+	margin-right:      auto;
+	text-align:        center;
+}
+
+.quicklinks .qltitle {
+	text-align:        center;
+	font-weight:       bold;
+	position:          relative;
+	margin:            3px;
+	border-style:      solid none none none;
+	border-width:      2px;
+	border-color:      #b0b0b0;
+}
+
+.quicklinks table {
+	width:             100%;
+	text-align:        left;
+	font-size:         0.85em;
+}
+
+tr.qlodd {
+	background-color:  #d8d8d8;
+}
+tr.qlodd th {
+	background-color:  #b0b0b0;
+}
+tr.qlodd th a               { color: black; text-decoration: none; }
+tr.qlodd th a:hover	    { color: #39f;  text-decoration: none; }
+tr.qlodd th a:visited       { color: black; text-decoration: none; }
+tr.qlodd th a:visited:hover { color: #39f;  text-decoration: none; }
+
+tr.qleven {
+	background-color:  #ffffff;
+}
+tr.qleven th {
+	background-color:  #d8d8d8;
+}
+tr.qleven th a  	     { color: black; text-decoration: none; }
+tr.qleven th a:hover	     { color: #39f;  text-decoration: none; }
+tr.qleven th a:visited       { color: black; text-decoration: none; }
+tr.qleven th a:visited:hover { color: #39f;  text-decoration: none; }
+/*	
+			Standard product tables.
+
+				Show and hide controls.
+*/
+.treeshowhide {
+	position:          relative;
+	width:             100%;
+}
+.treeshowhide div {
+	color:		   blue;
+	font-weight:       bold;
+	text-decoration:   none;
+	text-align:        right;
+	margin-left:       1em;
+	float:             right;
+}
+.treeshowhide div:hover {
+	background-color:  blue;
+	color:             white;
+}
+.treeclear {
+	clear:             right;
+}
+/*
+				Table presentation.
+*/
+.datatablelink {
+	font-size:       0.85em;
+	text-decoration: none;
+	text-align:      center;
+	position:        relative;
+}
+
+.datatable {
+	color:              black;
+	background-color:   white;
+	margin:             0px 0px 10px 0px;
+	padding:            3px;
+	width:              100%;
+	border:             solid 2px #069;
+	text-decoration:    none;
+	text-align:         center;
+}
+
+.dataheader {			/* Show/hide suppressed. */
+	color:              white;
+	background-color:   #069;
+	font-size:          1.2em;
+	border:             1px solid #069;
+	width:              100%;
+}
+
+.dataheaderv {			/* Visible. */
+	color:              white;
+	background:         #069  url(../../s/images/arrowopen.gif) center left no-repeat;
+	font-size:          1.2em;
+	border:             1px solid #069;
+	width:              100%;
+}
+.dataheaderv div:hover {
+	color:              #ddf;
+	text-decoration:    underline;
+}
+
+.dataheaderh {			/* Hidden.  */
+	color:              black;
+	background:         #e5eaef  url(../../s/images/arrowclose.gif) center left no-repeat;
+	font-size:          1.2em;
+	border:             1px solid #069;
+	width:              100%;
+}
+.dataheaderh div:hover {
+	color:              blue;
+	text-decoration:    underline;
+}
+.dataheaderroll {
+	text-align:         center;
+}
+
+.datasubheader {
+	color:              #069;
+	background-color:   #dcdcdc;
+	padding:            3px;
+	border-left:        1px solid #999;
+	border-right:       1px solid #999;
+}
+
+.datacellleft {
+	text-align:         left;
+	vertical-align:     middle;
+	padding:            3px;
+	border-left:        1px solid #999;
+	border-right:       1px solid #999;
+	border-bottom:      2px solid #69c;
+}
+
+.datacellcenter {
+	text-align:         center;
+	vertical-align:     middle;
+	padding:            3px;
+	border-left:        1px solid #999;
+	border-right:       1px solid #999;
+	border-bottom:      2px solid #69c;
+}
+
+.datacellright {
+	text-align:         right;
+	vertical-align:     middle;
+	padding:            3px;
+	border-left:        1px solid #999;
+	border-right:       1px solid #999;
+	border-bottom:      2px solid #69c;
+}
+
+.nvoid {
+	font-weight:    normal;
+	color:          #040;
+	font-size:      0.85em;
+}
+.nvoidhdr {
+	color: #040;
+	font-size: 0.85em;
+}
+/*
+			Tables of links.
+*/
+.linktable {
+	color:              black;
+	background-color:   white;
+	margin:             0px 0px 10px 0px;
+	padding:            3px;
+	width:              100%;
+	border:             0px;
+	text-decoration:    none;
+	text-align:         center;
+}
+
+.linkcellleft {
+	text-align:         left;
+	vertical-align:     middle;
+	padding:            3px;
+}
+
+.linkcellcenter {
+	text-align:         center;
+	vertical-align:     middle;
+	padding:            3px;
+}
+
+.linkcellright {
+	text-align:         right;
+	vertical-align:     middle;
+	padding:            3px;
+}
+/*
+			Product detail pages.
+*/
+#detailheader {
+	color:           black;
+	font-weight:     normal;
+	font-size:       14px;
+	line-height:     18px;
+	font-family:     Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+	text-decoration: none;
+}
+.detailrow {
+	position:       relative;
+	height:         18px;
+}
+.detailrowleft {
+	position:       absolute;
+	left:           0px;
+	bottom:         0px;
+	width:          150px;
+}
+.detailrowright {
+	position:       absolute;
+	left:           150px;
+	bottom:         0px;
+	width:          500px;
+}
+.detailhighlight {
+	color:       #069;
+	font-weight: bold;
+}
+/*
+			Print page breaks.
+*/
+.nopgbrk {
+	page-break-inside:	avoid;
+}
+
+
+.stripe table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 30%;
+}
+
+.stripe td, th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.stripe tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.supsub {
+    display: inline-block;
+}
+
+.supsub sup,
+.supsub sub {
+    position: relative;
+    display: block;
+    font-size: .7em;
+    line-height: 1.2;
+}
+
+.supsub sub {
+    top: .3em;
+}
+
+.portalbg {
+
+ position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url('../images/BlackHoleArt_Lede1300.jpg') center center;
+  opacity: 1;
+    width: 100%;
+    height:100%;
+    background-size: cover;
+  filter: grayscale(100%); 
+  filter: contrast(40%);
+}
+
+.pathcard {
+    color:black;
+    background-color:#EEE; 
+    padding:20px; 
+    margin-top:20px;
+    margin-bottom:40px;
+}
+
