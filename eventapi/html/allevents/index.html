@@ -1650,21 +1650,22 @@ following 5 lines required to use Caltech Library Services for registering our D
     <p style="text-align: center;"> <b><u>READ EXTERNAL SOURCE</u></b></p>
     <p>
       <script>
-     	        var fileName = "https://walterm128.github.io/nasaappweb/eventapi/html/allevents/textTest.txt";
-              var txtFile;
-                    if (window.XMLHttpRequest)
-                {// code for IE7+, Firefox, Chrome, Opera, Safari
-                txtFile = new XMLHttpRequest();
-                }
-              else
-                {// code for IE6, IE5
-                txtFile = new ActiveXObject("Microsoft.XMLHTTP");
-                }
-              txtFile.open("GET",fileName,false);
-              txtFile.send();
-              var txtDoc=txtFile.responseText;
-              var lines = txtDoc.split("\r\n"); // values in lines[0], lines[1]...
-        			document.write(lines);
+              /**
+               Callback for when jQuery has my file loaded. Places the
+               content in the filecontents div.
+               @param data File contents
+               */
+        			var fileName = "https://walterm128.github.io/nasaappweb/eventapi/html/allevents/textTest.txt";
+              function handleFile(data) {
+                jQuery('#filecontents').html(data);
+              }
+
+              // Issue a request to load test_file as text (don't eval it, jQuery!).
+              jQuery.get(fileName,
+                         handleFile,
+                         'text');
+
+              document.write('<div id="filecontents"></div>');
       </script> <br>
     </p>
     <br>
