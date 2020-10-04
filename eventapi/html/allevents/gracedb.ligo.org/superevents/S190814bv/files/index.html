@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<!-- Mirrored from gracedb.ligo.org/superevents/S190814bv/files/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Oct 2020 01:21:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+
+      <!--Import bootstrap and custom colors-->
+      <link type="text/css" rel="stylesheet" href="../../../static/bootstrap/dist/css/bootstrap.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../../../static/css/themecolors.css" />
+      <link type="text/css" rel="stylesheet" href="../../../static/css/override-new.css" />
+      <link type="text/css" rel="stylesheet" href="../../../../cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
+      <link type="text/css" rel="stylesheet" href="../../../static/ekko-lightbox/dist/ekko-lightbox.css" />
+      <link rel="stylesheet" href="../../../static/trumbowyg/dist/ui/trumbowyg.min.css">
+<!--
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+      <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Alegreya:700" rel="stylesheet" type="text/css" />
+
+      <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+-->
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+
+    
+    <link rel="icon" href="data:,">
+    <title>GraceDB | Files for S190814bv</title>
+    <!-- START TESTING -->
+    <script type="text/javascript">
+       function changeTime(obj, label) {
+           var timetype = obj.attr("value");
+           if (timetype=="") { return; }
+           var times = document.getElementsByName("time-"+label);
+           for (i=0; i<times.length; i++) {
+               newtime =  times[i].getAttribute(timetype);
+               times[i].innerHTML = newtime;
+           }
+       }
+
+     </script>
+<!--
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+-->
+
+     <script src="../../../../ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="../../../../cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.js"></script>
+     <script src="../../../static/trumbowyg/dist/trumbowyg.min.js"></script>
+     <script src="../../../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+     <script src="../../../../maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+     <script src="../../../static/ekko-lightbox/dist/ekko-lightbox.js"></script>
+     <!-- lightbox script --->
+     <script type="text/javascript">
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                        event.preventDefault();
+                        $(this).ekkoLightbox();
+                    });
+     </script>
+
+     <script type="text/javascript">
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip({
+           placement: 'top',
+           container: 'body',
+           boundary: 'viewport'
+        })
+        })
+     </script>
+     
+     <!-- END TESTING -->
+     
+     
+
+
+
+
+</head>
+
+<body id="Superevent files">
+
+
+   
+       
+
+
+  <nav class="navbar navbar-expand-md navbar-gracedb navbar-dark">
+    <a class="navbar-brand text-white" href="https://gracedb.ligo.org/">
+      <img src="https://gracedb.ligo.org/static/images/logo.svg" style="width:40px;">
+      GraceDB  
+      
+    </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+    <ul class="navbar-nav">
+      <li class="nav-item">
+         <a class="nav-link text-light font-weight-bold" href="https://gracedb.ligo.org/superevents/public/O3/">Public Alerts</a>
+      </li>
+
+      <li class="nav-item">
+         <a class="nav-link text-light font-weight-light" href="https://gracedb.ligo.org/latest/">Latest</a>
+      </li>
+
+      <li class="nav-item">
+         <a class="nav-link text-light font-weight-light" href="https://gracedb.ligo.org/search/">Search</a>
+      </li>
+
+      
+
+      <li class="nav-item">
+         <a class="nav-link text-light font-weight-light" href="https://gracedb.ligo.org/documentation/" target="_blank">Documentation</a>
+      </li>
+
+      
+          
+      
+
+      
+         <li class="nav-item">
+            <a class="nav-link text-light font-weight-light" href="https://gracedb.ligo.org/login/?next=/superevents/S190814bv/files/">Login</a>
+         </li>
+      
+    </ul>
+  </div>
+  </nav>
+
+  <div class="container-fluid navbar-gracedb text-left">
+           <span class="text-light" style="font-size:8pt">  
+           
+           Please log in to view full database contents.
+           </span>
+         
+  </div>
+
+   
+
+   <div class="container-fluid">
+            </br>
+
+
+          
+        
+           <h2>Files for S190814bv</h2>
+               
+<p></p>
+
+<ul>
+
+<li><a href="../../../apiweb/superevents/S190814bv/files/GW190814.volume.png">GW190814.volume.png</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/GW190814.volume.png,0">GW190814.volume.png,0</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/GW190814_skymap.fits.gz">GW190814_skymap.fits.gz</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/GW190814_skymap.fits.gz,0">GW190814_skymap.fits.gz,0</a></li>
+
+<li><a href="../../../apiweb/superevents/S190814bv/files/GW190814_skymap.png">GW190814_skymap.png</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/GW190814_skymap.png,0">GW190814_skymap.png,0</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/GW190814_skymap_flat.fits.gz">GW190814_skymap_flat.fits.gz</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/GW190814_skymap_flat.fits.gz,0">GW190814_skymap_flat.fits.gz,0</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/LALInference.v1.fits.gz">LALInference.v1.fits.gz</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/LALInference.v1.fits.gz,0">LALInference.v1.fits.gz,0</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/LALInference.v1.html">LALInference.v1.html</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/LALInference.v1.html,0">LALInference.v1.html,0</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/LALInference.v1.multiorder.fits">LALInference.v1.multiorder.fits</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/LALInference.v1.multiorder.fits,0">LALInference.v1.multiorder.fits,0</a></li>
+
+<li><a href="../../../apiweb/superevents/S190814bv/files/LALInference.v1.png">LALInference.v1.png</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/LALInference.v1.png,0">LALInference.v1.png,0</a></li>
+
+<li><a href="../../../apiweb/superevents/S190814bv/files/LALInference.v1.volume.png">LALInference.v1.volume.png</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/LALInference.v1.volume.png,0">LALInference.v1.volume.png,0</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/S190814bv-1-Preliminary.xml">S190814bv-1-Preliminary.xml</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/S190814bv-1-Preliminary.xml,0">S190814bv-1-Preliminary.xml,0</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/S190814bv-2-Initial.xml">S190814bv-2-Initial.xml</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/S190814bv-2-Initial.xml,0">S190814bv-2-Initial.xml,0</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/S190814bv-3-Preliminary.xml">S190814bv-3-Preliminary.xml</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/S190814bv-3-Preliminary.xml,0">S190814bv-3-Preliminary.xml,0</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/S190814bv-4-Update.xml">S190814bv-4-Update.xml</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/S190814bv-4-Update.xml,0">S190814bv-4-Update.xml,0</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/S190814bv-5-Update.xml">S190814bv-5-Update.xml</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/S190814bv-5-Update.xml,0">S190814bv-5-Update.xml,0</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/bayestar.fits.gz">bayestar.fits.gz</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/bayestar.fits.gz,0">bayestar.fits.gz,0</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/bayestar.fits.gz,1">bayestar.fits.gz,1</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/bayestar.html">bayestar.html</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/bayestar.html,0">bayestar.html,0</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/bayestar.html,1">bayestar.html,1</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/bayestar.multiorder.fits">bayestar.multiorder.fits</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/bayestar.multiorder.fits,0">bayestar.multiorder.fits,0</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/bayestar.multiorder.fits,1">bayestar.multiorder.fits,1</a></li>
+
+<li><a href="../../../apiweb/superevents/S190814bv/files/bayestar.png">bayestar.png</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/bayestar.png,0">bayestar.png,0</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/bayestar.png,1">bayestar.png,1</a></li>
+
+<li><a href="../../../apiweb/superevents/S190814bv/files/bayestar.volume.png">bayestar.volume.png</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/bayestar.volume.png,0">bayestar.volume.png,0</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/bayestar.volume.png,1">bayestar.volume.png,1</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/em_bright.json">em_bright.json</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/em_bright.json,0">em_bright.json,0</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/em_bright.json,1">em_bright.json,1</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/em_bright.json,2">em_bright.json,2</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/p_astro.json">p_astro.json</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/p_astro.json,0">p_astro.json,0</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/p_astro.json,1">p_astro.json,1</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/p_astro.json,2">p_astro.json,2</a></li>
+
+<li><a href="../../../apiweb/superevents/S190814bv/files/p_astro.png">p_astro.png</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/p_astro.png,0">p_astro.png,0</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/p_astro.png,1">p_astro.png,1</a></li>
+
+<li><a href="https://gracedb.ligo.org/apiweb/superevents/S190814bv/files/p_astro.png,2">p_astro.png,2</a></li>
+
+</ul>
+
+
+
+        
+            <div class="row">
+                <div class="col align-self-center">
+                <center>
+                <img height="36" src="../../../static/images/nsf_4-color_bitmap_logo.png" />
+                <img height="36" src="../../../static/images/ligo-blue.gif" />
+                <img height="36" src="../../../static/images/LSC_logo50.png" />
+                <img height="36" src="../../../static/images/Virgo_logo50.png" />
+                <img height="36" src="../../../static/images/kagra.png" />
+                
+                
+                </center>
+            </div>
+            </div>
+    </div>
+
+
+</body>
+
+<!-- Mirrored from gracedb.ligo.org/superevents/S190814bv/files/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Oct 2020 01:22:10 GMT -->
+</html>
