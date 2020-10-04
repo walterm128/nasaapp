@@ -1654,8 +1654,9 @@ following 5 lines required to use Caltech Library Services for registering our D
                Callback for when jQuery has my file loaded. Places the
                content in the filecontents div.
                @param data File contents
+               var fileName = "https://walterm128.github.io/nasaappweb/eventapi/html/allevents/textTest.txt";
                */
-        			var fileName = "https://walterm128.github.io/nasaappweb/eventapi/html/allevents/textTest.txt";
+        			var fileName = "https://www.gw-openscience.org/eventapi/ascii/GWTC-1-confident/";
               function handleFile(data) {
                 jQuery('#filecontents').html(data);
               }
@@ -1665,7 +1666,7 @@ following 5 lines required to use Caltech Library Services for registering our D
                          handleFile,
                          'text');
 
-              document.write('<div id="filecontents"></div>');
+              document.write('<p><div id="filecontents"></div></p>');
       </script> <br>
     </p>
     <br>
