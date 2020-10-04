@@ -1649,8 +1649,6 @@ following 5 lines required to use Caltech Library Services for registering our D
     </div>
     <p style="text-align: center;"> <b><u>READ EXTERNAL SOURCE</u></b></p>
     <p>
-      <input type="button" onClick="Javascript: displayClassList();" value="Display Class List" />
-			<div id="searchResults"></div>
       <script>
         /**
                Callback for when jQuery has my file loaded. Places the
@@ -1669,25 +1667,6 @@ following 5 lines required to use Caltech Library Services for registering our D
                    'text');
 
         document.write('<div id="filecontents"></div>');
-        
-        /*
-        Other solution
-        */
-        function displayClassList() {
-
-        var path="descarga.csv"
-        var fso = new ActiveXObject('Scripting.FileSystemObject'),
-        iStream=fso.OpenTextFile(path, 1, false);
-
-        document.getElementById("searchResults").innerHTML="";
-
-        while(!iStream.AtEndOfStream) {
-            var line=iStream.ReadLine();
-            document.getElementById("searchResults").innerHTML += line + "<br/>";
-        }
-
-        iStream.Close();
-        }
         
       </script> <br>
     </p>
