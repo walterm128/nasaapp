@@ -1649,7 +1649,7 @@ following 5 lines required to use Caltech Library Services for registering our D
     </div>
     <p style="text-align: center;"> <b><u>READ EXTERNAL SOURCE</u></b></p>
     <p>
-      <script type="text/javascript">
+      <script>
               /**
                Callback for when jQuery has my file loaded. Places the
                content in the filecontents div.
@@ -1657,19 +1657,39 @@ following 5 lines required to use Caltech Library Services for registering our D
                var fileName = "https://walterm128.github.io/nasaappweb/eventapi/html/allevents/data.txt";
                */
         			var fileName = "https://walterm128.github.io/nasaappweb/eventapi/html/allevents/textTest.txt";
- 
-        			document.getElementById(fileName) 
-              .addEventListener('change', function() { 
+              function handleFile(data) {
+                jQuery('#filecontents').html(data);
+              }
 
-              var fr=new FileReader(); 
-              fr.onload=function(){ 
-                  document.getElementById('output') 
-                          .textContent=fr.result; 
-              } 
+              // Issue a request to load test_file as text (don't eval it, jQuery!).
+              jQuery.get(fileName,
+                         handleFile,
+                         'text');
 
-              fr.readAsText(this.files[0]); 
-        }) 
+              document.write('<div id="filecontents"></div>');
+        
+        /**
+        File read two
+        */
+        document.getElementById("https://walterm128.github.io/nasaappweb/eventapi/html/allevents/textTest.txt").onchange = function(){
+
+        var file = this.files[0];
+
+        var reader = new FileReader();
+        reader.onload = function(progressEvent){
+          // Entire file
+          console.log(this.result);
+
+          // By lines
+          var lines = this.result.split('\n');
+          for(var line = 0; line < lines.length; line++){
+            console.log(lines[line]);
+          }
+        };
+        reader.readAsText(file);
+      };
       </script> <br>
+      <input type="file" name="file" id="file">
     </p>
     <br>
     <br>
