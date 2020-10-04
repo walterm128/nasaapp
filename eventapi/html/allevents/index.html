@@ -1650,46 +1650,25 @@ following 5 lines required to use Caltech Library Services for registering our D
     <p style="text-align: center;"> <b><u>READ EXTERNAL SOURCE</u></b></p>
     <p>
       <script>
-              /**
+        /**
                Callback for when jQuery has my file loaded. Places the
                content in the filecontents div.
                @param data File contents
                var fileName = "https://walterm128.github.io/nasaappweb/eventapi/html/allevents/data.txt";
                */
-        			var fileName = "https://walterm128.github.io/nasaappweb/eventapi/html/allevents/textTest.txt";
-              function handleFile(data) {
-                jQuery('#filecontents').html(data);
-              }
+        var fileName = "https://walterm128.github.io/nasaappweb/eventapi/html/allevents/textTest.txt";
+        function handleFile(data) {
+          jQuery('#filecontents').html(data);
+        }
 
-              // Issue a request to load test_file as text (don't eval it, jQuery!).
-              jQuery.get(fileName,
-                         handleFile,
-                         'text');
+        // Issue a request to load test_file as text (don't eval it, jQuery!).
+        jQuery.get(fileName,
+                   handleFile,
+                   'text');
 
-              document.write('<div id="filecontents"></div>');
+        document.write('<div id="filecontents"></div>');
         
-        /**
-        File read two
-        */
-        document.getElementById("https://walterm128.github.io/nasaappweb/eventapi/html/allevents/textTest.txt").onchange = function(){
-
-        var file = this.files[0];
-
-        var reader = new FileReader();
-        reader.onload = function(progressEvent){
-          // Entire file
-          console.log(this.result);
-
-          // By lines
-          var lines = this.result.split('\n');
-          for(var line = 0; line < lines.length; line++){
-            console.log(lines[line]);
-          }
-        };
-        reader.readAsText(file);
-      };
       </script> <br>
-      <input type="file" name="file" id="file">
     </p>
     <br>
     <br>
