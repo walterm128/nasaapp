@@ -4,5 +4,5 @@
 # Nominación Mundial
 <img src="./NominacionMundial.jpg">
 
-# Proyecto Ganador
+# Integrantes del Proyecto
 <img src="./1.jpg">
