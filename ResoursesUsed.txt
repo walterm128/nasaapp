@@ -4,3 +4,4 @@ Youtube
 Mega.nz
 VSCode
 Gimp
+Libreoffice
