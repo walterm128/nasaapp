@@ -5,3 +5,4 @@ Mega.nz
 VSCode
 Gimp
 Libreoffice
+VSCode
