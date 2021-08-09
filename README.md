@@ -1,5 +1,5 @@
 # NASA APP 2020
-# Link Web Page: https://walterm128.github.io/nasaappweb/
+# Link Web Page: https://walterm128.github.io/nasaappweb/eventapi/html/allevents/index.html
 
 # Nominación Mundial
 <img src="./NominacionMundial.jpg">
